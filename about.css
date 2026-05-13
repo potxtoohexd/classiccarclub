@@ -1,0 +1,181 @@
+.containerA {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+    margin: 20px;
+    max-width: 1500px;
+}
+
+h1 {
+    grid-column: 4 / span 5;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    font-size: 0.4in;
+    margin-top: -2.45in;
+    margin-left: -0.3in;
+}
+
+h3 {
+    grid-column: 4 / span 12;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ac1a1a4a;
+    padding: 30px;
+    text-align: justify;
+    margin-top: 0.5in;
+}
+
+.wrapper {
+    grid-column: 5 / span 12;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.collapse {
+    max-width: 900px;
+    overflow: hidden;
+    font-weight: 550;
+    box-shadow: 0 5px 11px 0 rgba(255, 0, 0, 0.527);
+}
+
+.collapse input {
+    display: none;
+}
+
+.collapse label{
+    position: relative;
+    font-weight: 500;
+    background-image: url(about1.png);
+    background-size: cover;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.25in;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    padding-top: 20px;
+    padding-left: 70px;
+    z-index: 1;
+}
+
+.collapse label::after {
+    content: "";
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.collapse label:checked + label::after {
+    transform: rotate(90deg);
+}
+
+.textcollapse {
+    max-height: 1px;
+    overflow: hidden;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapse input:checked ~ .textcollapse {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: black;
+    opacity: 1;
+    top: 0;
+}
+
+.textcollapse p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 70px;
+    padding-right: 50px;
+    text-align: justify;
+}
+
+.wrapper2 {
+    grid-column: 5 / span 12;
+    padding-top: 50px;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.collapse2 {
+    max-width: 900px;
+    overflow: hidden;
+    font-weight: 500;
+    box-shadow: 0 5px 11px 0 rgba(255, 0, 0, 0.527);
+}
+
+.collapse2 input {
+    display: none;
+}
+
+.collapse2 label {
+    position: relative;
+    font-weight: 500;
+    background-image: url(about1.png);
+    background-size: cover;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.25in;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    padding-top: 20px;
+    padding-left: 70px;
+    z-index: 1;
+}
+
+.collapse2 label::after {
+    content: "";
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.collapse2 label:checked + label::after {
+    transform: rotate(90deg);
+}
+
+.textcollapse2 {
+    max-height: 1px;
+    overflow: hidden;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapse2 input:checked ~ .textcollapse2 {
+    max-height: 1000px;
+    padding-bottom: 25px;
+    background: black;
+    opacity: 1;
+    top: 0;
+}
+
+.textcollapse2 p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 70px;
+    padding-right: 50px;
+    text-align: justify;
+}
+
+
+#footer {
+    position: absolute;
+    width: 98%;
+    background-color: #efefef22;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+    padding: 20px;
+    bottom: 0;
+}
