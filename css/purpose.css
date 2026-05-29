@@ -1,0 +1,353 @@
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #1c0000;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#740101,#000000);
+    border-radius: 10px;
+}
+body{
+    background-color: black;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+}
+.container2{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+.content{
+    text-align: center;
+}
+.content2{
+    background-image: url(../img/bg.jpg);
+    padding: 30px;
+    margin-top: -15px;
+}
+.links{
+    text-decoration: none;
+    display:flex;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #000000;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    gap: 25px;
+}
+.lt{
+    width: 200px;
+    text-align: center;
+    padding-top: 15px;
+}
+.lt a{
+    text-decoration: none;
+    display: inline-block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    color: white;
+    transition: .2s;
+}
+.lt a:hover{
+    text-decoration: none;
+    transform: scale(1.2);
+}
+.ccclogo{
+    display: flex;
+    justify-content: center;
+}
+.text1{
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+.text2{
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin: 20px;
+}
+.text3{
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 30px;
+    text-align: justify;
+}
+.text4{
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 30px;
+    margin-top: -20px;
+    text-align: justify;
+    padding: 40px;
+    background-color: #99000060;
+}
+
+.found{
+    background-color: rgb(140, 0, 0);
+    text-decoration: none;
+    height: 50px;
+    width: 320px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.5s;
+}
+.found:hover{
+    transform: scaleX(1.1);
+}
+
+hr{
+    border: 1px solid #a60000;
+}
+
+/* purpose collapsable */
+
+
+.wrapper {
+    grid-column: 5 / span 12;
+    padding-top: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.wrapper:hover{
+    transform: scale(1.05);
+}
+
+.collapse {
+    max-width: 100%;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 5px 11px 0 rgba(255, 0, 0, 0.527);
+}
+
+.collapse input {
+    display: none;
+}
+
+.collapse label{
+    position: relative;
+    font-weight: 500;
+    background-image: url(../img/about1.png);
+    background-size: cover;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.25in;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.collapse label::after {
+    content: "";
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.collapse label:checked + label::after {
+    transform: rotate(90deg);
+}
+
+.textcollapse {
+    max-height: 1px;
+    overflow: hidden;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.collapse input:checked ~ .textcollapse {
+    max-height: 200px;
+    padding-bottom: 25px;
+    background: #ff000033;
+    opacity: 1;
+    top: 0;
+}
+
+.textcollapse p {
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+
+.wrapper2 {
+    grid-column: 5 / span 12;
+    padding-top: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.wrapper2:hover{
+    transform: scale(1.05);
+}
+
+.collapse2 {
+    max-width: 100%;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 5px 11px 0 rgba(255, 0, 0, 0.527);
+}
+
+.collapse2 input {
+    display: none;
+}
+
+.collapse2 label{
+    position: relative;
+    font-weight: 500;
+    background-image: url(../img/about1.png);
+    background-size: cover;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.25in;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.collapse2 label::after {
+    content: "";
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.collapse2 label:checked + label::after {
+    transform: rotate(90deg);
+}
+
+.textcollapse2 {
+    max-height: 1px;
+    overflow: hidden;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.collapse2 input:checked ~ .textcollapse2 {
+    max-height: 200px;
+    padding-bottom: 25px;
+    background: #ff000033;
+    opacity: 1;
+    top: 0;
+}
+
+.textcollapse2 p {
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+
+.wrapper3 {
+    grid-column: 5 / span 12;
+    padding-top: 10px;
+    justify-content: center;
+    margin-bottom: 300px;
+    transition: 0.5s;
+}
+.wrapper3:hover{
+    transform: scale(1.05);
+}
+
+.collapse3 {
+    max-width: 100%;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 5px 11px 0 rgba(255, 0, 0, 0.527);
+}
+
+.collapse3 input {
+    display: none;
+}
+
+.collapse3 label{
+    position: relative;
+    font-weight: 500;
+    background-image: url(../img/about1.png);
+    background-size: cover;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.25in;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.collapse3 label::after {
+    content: "";
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.collapse3 label:checked + label::after {
+    transform: rotate(90deg);
+}
+
+.textcollapse3 {
+    max-height: 1px;
+    overflow: hidden;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.collapse3 input:checked ~ .textcollapse3 {
+    max-height: 200px;
+    padding-bottom: 25px;
+    background: #ff000033;
+    opacity: 1;
+    top: 0;
+}
+
+.textcollapse3 p {
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+
+#footer {
+    position: relative;
+    background-color: #efefef22;
+    display: flex;
+    color: white;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+    margin-top: 0;
+    padding: 20px;
+}
